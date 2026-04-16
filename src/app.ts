@@ -11,7 +11,19 @@ import healthRoutes from "./routes/health.routes"
 import playRoutes from "./routes/play.routes"
 import { logger } from "./utils/logger"
 
+function assertRouter(name: string, value: unknown): void {
+  if (!value) {
+    throw new Error(`Route import is undefined: ${name}`)
+  }
+}
+
 export function createApp() {
+  assertRouter("healthRoutes", healthRoutes)
+  assertRouter("healthFirestoreRoutes", healthFirestoreRoutes)
+  assertRouter("healthPlayRoutes", healthPlayRoutes)
+  assertRouter("healthRepositoriesRoutes", healthRepositoriesRoutes)
+  assertRouter("playRoutes", playRoutes)
+
   const app = express()
 
   app.use(express.json())

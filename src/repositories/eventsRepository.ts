@@ -28,5 +28,11 @@ export async function findEventByIdempotencyKey(
     return null
   }
 
-  return snapshot.docs[0].data() as EventRecord
+  const firstDoc = snapshot.docs[0]
+
+  if (!firstDoc) {
+    return null
+  }
+
+  return firstDoc.data() as EventRecord
 }

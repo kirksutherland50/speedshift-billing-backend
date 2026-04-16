@@ -1,0 +1,39 @@
+// File: src/app.ts
+
+import express from "express"
+import { ROUTES } from "./config/constants"
+import { errorHandler, notFoundHandler } from "./middleware/errorHandler"
+import { requestIdMiddleware } from "./middleware/requestId"
+import healthFirestoreRoutes from "./routes/health.firestore.routes"
+import healthPlayRoutes from "./routes/health.play.routes"
+import healthRepositoriesRoutes from "./routes/health.repositories.routes"
+import healthRoutes from "./routes/health.routes"
+import playRoutes from "./routes/play.routes"
+import { logger } from "./utils/logger"
+
+export function createApp() {
+  const app = express()
+
+  app.use(express.json())
+  app.use(requestIdMiddleware)
+
+  app.use((req, _res, next) => {
+    logger.info("Incoming request", {
+      requestId: req.requestId,
+      method: req.method,
+      path: req.originalUrl
+    })
+    next()
+  })
+
+  app.use(ROUTES.health, healthRoutes)
+  app.use(ROUTES.healthFirestore, healthFirestoreRoutes)
+  app.use(ROUTES.healthPlay, healthPlayRoutes)
+  app.use(ROUTES.healthRepositories, healthRepositoriesRoutes)
+  app.use("/play", playRoutes)
+
+  app.use(notFoundHandler)
+  app.use(errorHandler)
+
+  return app
+}

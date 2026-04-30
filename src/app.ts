@@ -1,6 +1,7 @@
 // File: src/app.ts
 
 import express from "express"
+import entitlementsRoutes from "./routes/entitlements.routes"
 import { ROUTES } from "./config/constants"
 import { errorHandler, notFoundHandler } from "./middleware/errorHandler"
 import { requestIdMiddleware } from "./middleware/requestId"
@@ -9,6 +10,7 @@ import healthPlayRoutes from "./routes/health.play.routes"
 import healthRepositoriesRoutes from "./routes/health.repositories.routes"
 import healthRoutes from "./routes/health.routes"
 import playRoutes from "./routes/play.routes"
+import playRtdnRoutes from "./routes/play.rtdn.routes"
 import { logger } from "./utils/logger"
 
 function assertRouter(name: string, value: unknown): void {
@@ -23,6 +25,8 @@ export function createApp() {
   assertRouter("healthPlayRoutes", healthPlayRoutes)
   assertRouter("healthRepositoriesRoutes", healthRepositoriesRoutes)
   assertRouter("playRoutes", playRoutes)
+  assertRouter("playRtdnRoutes", playRtdnRoutes)
+  assertRouter("entitlementsRoutes", entitlementsRoutes)
 
   const app = express()
 
@@ -43,6 +47,8 @@ export function createApp() {
   app.use(ROUTES.healthPlay, healthPlayRoutes)
   app.use(ROUTES.healthRepositories, healthRepositoriesRoutes)
   app.use("/play", playRoutes)
+  app.use("/play", playRtdnRoutes)
+  app.use("/entitlements", entitlementsRoutes)
 
   app.use(notFoundHandler)
   app.use(errorHandler)

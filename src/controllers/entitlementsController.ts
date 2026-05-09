@@ -5,8 +5,21 @@ import { EntitlementResponse } from "../models/api/entitlementResponse"
 import { getEntitlementByAppUserId } from "../repositories/entitlementsRepository"
 import { AppError } from "../types/errors"
 
-function isEntitlementActive(status: EntitlementResponse["entitlement"]["status"]): boolean {
-  return status === "ACTIVE" || status === "GRACE_PERIOD"
+function isEntitlementActive(args: {
+  tier: EntitlementResponse["entitlement"]["tier"]
+  status: EntitlementResponse["entitlement"]["status"]
+}): boolean {
+  if (args.tier !== "pro") {
+    return false
+  }
+
+  return (
+    args.status === "ACTIVE" ||
+    args.status === "GRACE_PERIOD" ||
+    args.status === "ON_HOLD" ||
+    args.status === "PAUSED" ||
+    args.status === "CANCELED"
+  )
 }
 
 export async function getMyEntitlementController(
@@ -48,7 +61,10 @@ export async function getMyEntitlementController(
       requestId: req.requestId,
       entitlement: {
         tier: entitlement.tier,
-        active: isEntitlementActive(entitlement.status),
+active: isEntitlementActive({
+  tier: entitlement.tier,
+  status: entitlement.status
+}),
         status: entitlement.status,
         expiresAt: entitlement.expiryTime,
         willRenew: entitlement.willRenew,

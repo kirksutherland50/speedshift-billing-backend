@@ -75,16 +75,25 @@ export async function verifyPurchaseService(
       )
     }
 
-    const entitlement = computeEntitlementFromPurchase({
-      purchase: existingPurchase,
-      lastEventId: existingEvent.eventId
-    })
+   if (existingPurchase.productType === "SUBSCRIPTION") {
+     await acknowledgeSubscriptionPurchaseIfNeeded({
+       packageName: existingPurchase.packageName,
+       productId: existingPurchase.productId,
+       purchaseToken: existingPurchase.purchaseToken,
+       acknowledgementState: existingPurchase.acknowledgementState
+     })
+   }
 
-    return {
-      purchase: existingPurchase,
-      entitlement,
-      idempotent: true
-    }
+   const entitlement = computeEntitlementFromPurchase({
+     purchase: existingPurchase,
+     lastEventId: existingEvent.eventId
+   })
+
+   return {
+     purchase: existingPurchase,
+     entitlement,
+     idempotent: true
+   }
   }
 
   await upsertUser({

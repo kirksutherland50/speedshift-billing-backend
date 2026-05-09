@@ -5,6 +5,7 @@ export const APP_NAME = "speedshift-billing-backend"
 export const COLLECTIONS = {
   users: "users",
   entitlements: "entitlements",
+  manualEntitlementGrants: "manualEntitlementGrants",
   purchases: "purchases",
   events: "events"
 } as const

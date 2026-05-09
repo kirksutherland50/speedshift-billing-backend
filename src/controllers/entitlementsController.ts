@@ -4,6 +4,7 @@ import { Request, Response, NextFunction } from "express"
 import { EntitlementResponse } from "../models/api/entitlementResponse"
 import { getEntitlementByAppUserId } from "../repositories/entitlementsRepository"
 import { AppError } from "../types/errors"
+import { getActiveManualEntitlementGrantByAppUserId } from "../repositories/manualEntitlementGrantsRepository"
 
 function isEntitlementActive(args: {
   tier: EntitlementResponse["entitlement"]["tier"]
@@ -36,7 +37,28 @@ export async function getMyEntitlementController(
       )
     }
 
-    const entitlement = await getEntitlementByAppUserId(req.appUserId)
+const manualGrant = await getActiveManualEntitlementGrantByAppUserId(req.appUserId)
+
+if (manualGrant) {
+  const response: EntitlementResponse = {
+    ok: true,
+    requestId: req.requestId,
+    entitlement: {
+      tier: "pro",
+      active: true,
+      status: "ACTIVE",
+      expiresAt: manualGrant.expiresAt,
+      willRenew: false,
+      source: manualGrant.source,
+      sourceOfTruth: "backend"
+    }
+  }
+
+  res.status(200).json(response)
+  return
+}
+
+const entitlement = await getEntitlementByAppUserId(req.appUserId)
 
     if (!entitlement) {
       const response: EntitlementResponse = {
@@ -48,6 +70,7 @@ export async function getMyEntitlementController(
           status: "INACTIVE",
           expiresAt: null,
           willRenew: false,
+          source: "none",
           sourceOfTruth: "backend"
         }
       }
@@ -68,6 +91,7 @@ active: isEntitlementActive({
         status: entitlement.status,
         expiresAt: entitlement.expiryTime,
         willRenew: entitlement.willRenew,
+        source: entitlement.source,
         sourceOfTruth: "backend"
       }
     }

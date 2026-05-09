@@ -1,0 +1,637 @@
+﻿[
+  {
+    "insertId": "69e0ddd700028a20fa11ed05",
+    "jsonPayload": {
+      "body": {
+        "message": {
+          "data": "e3ZlcnNpb246MS4wLHBhY2thZ2VOYW1lOmNvbS50ZXN0LmFwcCxldmVudFRpbWVNaWxsaXM6MTcxMzI3MDAwMDAwMCxzdWJzY3JpcHRpb25Ob3RpZmljYXRpb246e3ZlcnNpb246MS4wLG5vdGlmaWNhdGlvblR5cGU6MixwdXJjaGFzZVRva2VuOnRva2VuMTIzLHN1YnNjcmlwdGlvbklkOnByb19tb250aGx5fX0=",
+          "messageId": "18757555966754978",
+          "message_id": "18757555966754978",
+          "publishTime": "2026-04-16T13:02:14.532Z",
+          "publish_time": "2026-04-16T13:02:14.532Z"
+        },
+        "subscription": "projects/speedshift-493423/subscriptions/play-rtdn-push"
+      },
+      "level": "WARN",
+      "message": "Invalid JSON in RTDN payload",
+      "requestId": "req_1776344535167_nkd098fa",
+      "timestamp": "2026-04-16T13:02:15.167Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-04-16T13:02:15.504043401Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T13:02:15.166432Z"
+  },
+  {
+    "insertId": "69e0ddd70002877021bb04a8",
+    "jsonPayload": {
+      "level": "INFO",
+      "message": "Incoming request",
+      "method": "POST",
+      "path": "/play/rtdn",
+      "requestId": "req_1776344535167_nkd098fa",
+      "timestamp": "2026-04-16T13:02:15.167Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-04-16T13:02:15.175781025Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T13:02:15.165744Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.004679079s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.187.141.164",
+      "requestMethod": "POST",
+      "requestSize": "1832",
+      "requestUrl": "https://speedshift-billing-api-526141906932.europe-west2.run.app/play/rtdn",
+      "responseSize": "289",
+      "serverIp": "34.143.73.2",
+      "status": 200,
+      "userAgent": "APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)"
+    },
+    "insertId": "69e0ddd700028e6101659a7a",
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-04-16T13:02:15.173688923Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "323eba64735a8d66",
+    "timestamp": "2026-04-16T13:02:15.155129Z",
+    "trace": "projects/speedshift-493423/traces/657afdc51f64bc0bae81739b202a4212",
+    "traceSampled": true
+  },
+  {
+    "insertId": "69e0dc580003a70c37d85b4f",
+    "jsonPayload": {
+      "body": {
+        "message": {
+          "data": "e3ZlcnNpb246MS4wLHBhY2thZ2VOYW1lOmNvbS50ZXN0LmFwcCxldmVudFRpbWVNaWxsaXM6MTcxMzI3MDAwMDAwMCxzdWJzY3JpcHRpb25Ob3RpZmljYXRpb246e3ZlcnNpb246MS4wLG5vdGlmaWNhdGlvblR5cGU6MixwdXJjaGFzZVRva2VuOnRva2VuMTIzLHN1YnNjcmlwdGlvbklkOnByb19tb250aGx5fX0=",
+          "messageId": "18627337031719198",
+          "message_id": "18627337031719198",
+          "publishTime": "2026-04-16T12:55:51.534Z",
+          "publish_time": "2026-04-16T12:55:51.534Z"
+        },
+        "subscription": "projects/speedshift-493423/subscriptions/play-rtdn-push"
+      },
+      "level": "WARN",
+      "message": "Invalid JSON in RTDN payload",
+      "requestId": "req_1776344152239_6hjbyj2x",
+      "timestamp": "2026-04-16T12:55:52.240Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-04-16T12:55:52.577998998Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T12:55:52.239372Z"
+  },
+  {
+    "insertId": "69e0dc580003a53e760e64f2",
+    "jsonPayload": {
+      "level": "INFO",
+      "message": "Incoming request",
+      "method": "POST",
+      "path": "/play/rtdn",
+      "requestId": "req_1776344152239_6hjbyj2x",
+      "timestamp": "2026-04-16T12:55:52.239Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-04-16T12:55:52.245956268Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T12:55:52.238910Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.005141718s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.187.141.228",
+      "requestMethod": "POST",
+      "requestSize": "1831",
+      "requestUrl": "https://speedshift-billing-api-526141906932.europe-west2.run.app/play/rtdn",
+      "responseSize": "289",
+      "serverIp": "34.143.77.2",
+      "status": 200,
+      "userAgent": "APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)"
+    },
+    "insertId": "69e0dc580003abbc0522130d",
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-04-16T12:55:52.256591091Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "57ceabdea4947f0e",
+    "timestamp": "2026-04-16T12:55:52.228177Z",
+    "trace": "projects/speedshift-493423/traces/6a33e40a4fca2cc84026734828eba581",
+    "traceSampled": true
+  },
+  {
+    "insertId": "69e0dbad0007c6fdd5d18c5a",
+    "jsonPayload": {
+      "body": {
+        "message": {
+          "data": "e3ZlcnNpb246MS4wLHBhY2thZ2VOYW1lOmNvbS50ZXN0LmFwcCxldmVudFRpbWVNaWxsaXM6MTcxMzI3MDAwMDAwMCxzdWJzY3JpcHRpb25Ob3RpZmljYXRpb246e3ZlcnNpb246MS4wLG5vdGlmaWNhdGlvblR5cGU6MixwdXJjaGFzZVRva2VuOnRva2VuMTIzLHN1YnNjcmlwdGlvbklkOnByb19tb250aGx5fX0=",
+          "messageId": "18245475093968831",
+          "message_id": "18245475093968831",
+          "publishTime": "2026-04-16T12:53:00.719Z",
+          "publish_time": "2026-04-16T12:53:00.719Z"
+        },
+        "subscription": "projects/speedshift-493423/subscriptions/play-rtdn-push"
+      },
+      "level": "WARN",
+      "message": "Invalid JSON in RTDN payload",
+      "requestId": "req_1776343981509_djz7zsv7",
+      "timestamp": "2026-04-16T12:53:01.510Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-04-16T12:53:01.850348770Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T12:53:01.509693Z"
+  },
+  {
+    "insertId": "69e0dbad0007c3ef251a2908",
+    "jsonPayload": {
+      "level": "INFO",
+      "message": "Incoming request",
+      "method": "POST",
+      "path": "/play/rtdn",
+      "requestId": "req_1776343981509_djz7zsv7",
+      "timestamp": "2026-04-16T12:53:01.510Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-04-16T12:53:01.516068497Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T12:53:01.508911Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.005404051s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "34.98.142.97",
+      "requestMethod": "POST",
+      "requestSize": "1831",
+      "requestUrl": "https://speedshift-billing-api-526141906932.europe-west2.run.app/play/rtdn",
+      "responseSize": "289",
+      "serverIp": "34.143.73.2",
+      "status": 200,
+      "userAgent": "APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)"
+    },
+    "insertId": "69e0dbad0007cb1685fceabb",
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-04-16T12:53:01.521150005Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "fd4d983c4bec8697",
+    "timestamp": "2026-04-16T12:53:01.498216Z",
+    "trace": "projects/speedshift-493423/traces/0c54c5781f7099e9486713cdeb32308d",
+    "traceSampled": true
+  },
+  {
+    "insertId": "69e0da9a00051caa0712308b",
+    "jsonPayload": {
+      "error": "Expected property name or '}' in JSON at position 1",
+      "level": "ERROR",
+      "message": "Unhandled request error",
+      "method": "POST",
+      "path": "/play/rtdn",
+      "timestamp": "2026-04-16T12:48:26.335Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-04-16T12:48:26.338708882Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T12:48:26.335018Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.003100407s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "77.97.224.210",
+      "requestMethod": "POST",
+      "requestSize": "368",
+      "requestUrl": "https://speedshift-billing-api-526141906932.europe-west2.run.app/play/rtdn",
+      "responseSize": "292",
+      "serverIp": "34.143.73.2",
+      "status": 500,
+      "userAgent": "curl/8.13.0"
+    },
+    "insertId": "69e0da9a000520b088a6316c",
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-04-16T12:48:26.346306304Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "spanId": "b1f04374e789775d",
+    "timestamp": "2026-04-16T12:48:26.324572Z",
+    "trace": "projects/speedshift-493423/traces/e656ff6fb2d89f886e230962748b02b8",
+    "traceSampled": true
+  },
+  {
+    "insertId": "69e0da6b000ccf3b2e677263",
+    "jsonPayload": {
+      "body": {
+        "message": {
+          "data": "e1x2ZXJzaW9uXDpcMS4wXCxccGFja2FnZU5hbWVcOlxjb20udGVzdC5hcHBcLFxldmVudFRpbWVNaWxsaXNcOlwxNzEzMjcwMDAwMDAwXCxcc3Vic2NyaXB0aW9uTm90aWZpY2F0aW9uXDp7XHZlcnNpb25cOlwxLjBcLFxub3RpZmljYXRpb25UeXBlXDoyLFxwdXJjaGFzZVRva2VuXDpcdG9rZW4xMjNcLFxzdWJzY3JpcHRpb25JZFw6XHByb19tb250aGx5XH19",
+          "messageId": "18628294329414042",
+          "message_id": "18628294329414042",
+          "publishTime": "2026-04-16T12:47:39.101Z",
+          "publish_time": "2026-04-16T12:47:39.101Z"
+        },
+        "subscription": "projects/speedshift-493423/subscriptions/play-rtdn-push"
+      },
+      "level": "WARN",
+      "message": "Invalid JSON in RTDN payload",
+      "requestId": "req_1776343659837_qcfn99x0",
+      "timestamp": "2026-04-16T12:47:39.839Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-04-16T12:47:40.175779680Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T12:47:39.839483Z"
+  },
+  {
+    "insertId": "69e0da6b000cc5333524c51f",
+    "jsonPayload": {
+      "level": "INFO",
+      "message": "Incoming request",
+      "method": "POST",
+      "path": "/play/rtdn",
+      "requestId": "req_1776343659837_qcfn99x0",
+      "timestamp": "2026-04-16T12:47:39.837Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-04-16T12:47:39.841968289Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T12:47:39.836915Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.006958419s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "35.187.141.5",
+      "requestMethod": "POST",
+      "requestSize": "1868",
+      "requestUrl": "https://speedshift-billing-api-526141906932.europe-west2.run.app/play/rtdn",
+      "responseSize": "289",
+      "serverIp": "34.143.77.2",
+      "status": 200,
+      "userAgent": "APIs-Google; (+https://developers.google.com/webmasters/APIs-Google.html)"
+    },
+    "insertId": "69e0da6b000cd5708bcb5b88",
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-04-16T12:47:39.846024356Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "edcd432955877e3a",
+    "timestamp": "2026-04-16T12:47:39.832144Z",
+    "trace": "projects/speedshift-493423/traces/08af27981dd3021fde40eb0e52fe5984",
+    "traceSampled": true
+  },
+  {
+    "insertId": "69e0da58000d24bb5270d9a8",
+    "jsonPayload": {
+      "error": "Expected property name or '}' in JSON at position 1",
+      "level": "ERROR",
+      "message": "Unhandled request error",
+      "method": "POST",
+      "path": "/play/rtdn",
+      "timestamp": "2026-04-16T12:47:20.861Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-04-16T12:47:21.105510847Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T12:47:20.861371Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.007205462s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "77.97.224.210",
+      "requestMethod": "POST",
+      "requestSize": "368",
+      "requestUrl": "https://speedshift-billing-api-526141906932.europe-west2.run.app/play/rtdn",
+      "responseSize": "292",
+      "serverIp": "34.143.73.2",
+      "status": 500,
+      "userAgent": "curl/8.13.0"
+    },
+    "insertId": "69e0da58000d32dcaf1760f1",
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-04-16T12:47:21.105331003Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "spanId": "b11f83037a2bad16",
+    "timestamp": "2026-04-16T12:47:20.854795Z",
+    "trace": "projects/speedshift-493423/traces/cf205ae9c845ffc24ceead7f14e609cb"
+  },
+  {
+    "insertId": "69e0da52000bc598aa3ed401",
+    "jsonPayload": {
+      "error": "Expected property name or '}' in JSON at position 1",
+      "level": "ERROR",
+      "message": "Unhandled request error",
+      "method": "POST",
+      "path": "/play/rtdn",
+      "timestamp": "2026-04-16T12:47:14.771Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-04-16T12:47:14.778510179Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T12:47:14.771480Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.004325120s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "77.97.224.210",
+      "requestMethod": "POST",
+      "requestSize": "369",
+      "requestUrl": "https://speedshift-billing-api-526141906932.europe-west2.run.app/play/rtdn",
+      "responseSize": "292",
+      "serverIp": "34.143.73.2",
+      "status": 500,
+      "userAgent": "curl/8.13.0"
+    },
+    "insertId": "69e0da52000bcbc526772a91",
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-04-16T12:47:14.779348642Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "spanId": "0769fb6aaf56b993",
+    "timestamp": "2026-04-16T12:47:14.766982Z",
+    "trace": "projects/speedshift-493423/traces/9b2bc06638342b65c6888e0c11256062",
+    "traceSampled": true
+  },
+  {
+    "insertId": "69e0da3800092a85a3dc0715",
+    "jsonPayload": {
+      "error": "Expected property name or '}' in JSON at position 1",
+      "level": "ERROR",
+      "message": "Unhandled request error",
+      "method": "POST",
+      "path": "/play/rtdn",
+      "timestamp": "2026-04-16T12:46:48.601Z"
+    },
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-04-16T12:46:48.605964021Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-04-16T12:46:48.600709Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.039687477s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "77.97.224.210",
+      "requestMethod": "POST",
+      "requestSize": "368",
+      "requestUrl": "https://speedshift-billing-api-526141906932.europe-west2.run.app/play/rtdn",
+      "responseSize": "292",
+      "serverIp": "34.143.73.2",
+      "status": 500,
+      "userAgent": "curl/8.13.0"
+    },
+    "insertId": "69e0da38000945e4fb4ff452",
+    "labels": {
+      "instanceId": "008c15ff0858b7b5442610dcb92870d2bd413be669c2d524dfc08827a41c2faf081cabb20261a15eb20bb67861c045d6a71556e09c9349dba56b696efdeec0d8bc66068b6bf92b975e7e1b598f9401"
+    },
+    "logName": "projects/speedshift-493423/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-04-16T12:46:48.613100266Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "speedshift-billing-api",
+        "location": "europe-west2",
+        "project_id": "speedshift-493423",
+        "revision_name": "speedshift-billing-api-00003-x62",
+        "service_name": "speedshift-billing-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "ERROR",
+    "spanId": "791da26ce288f502",
+    "timestamp": "2026-04-16T12:46:48.560440Z",
+    "trace": "projects/speedshift-493423/traces/098803fce8fcc8cf26d04ff91e269d93",
+    "traceSampled": true
+  }
+]

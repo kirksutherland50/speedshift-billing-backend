@@ -15,7 +15,13 @@ export type EntitlementResponse = {
       | "CANCELED"
       | "EXPIRED"
     expiresAt: string | null
-    willRenew: boolean
-    sourceOfTruth: "backend"
+willRenew: boolean
+source:
+  | "google_play"
+  | "manual_lifetime"
+  | "trial"
+  | "admin_override"
+  | "none"
+sourceOfTruth: "backend"
   }
 }

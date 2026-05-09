@@ -1,5 +1,6 @@
 // File: src/services/billing/verifyPurchaseService.ts
 
+import { acknowledgeSubscriptionPurchaseIfNeeded } from "../play/playPurchaseAcknowledgeService"
 import { VerifyPurchaseRequest } from "../../models/api/verifyPurchaseRequest"
 import { PurchaseRecord } from "../../models/domain/purchase"
 import { lookupPlayPurchaseForVerification } from "../play/playPurchaseLookupService"
@@ -143,9 +144,18 @@ export async function verifyPurchaseService(
     updatedAt: nowIso()
   }
 
-  const savedPurchase = await upsertPurchase(purchaseToSave, existingPurchase)
+const savedPurchase = await upsertPurchase(purchaseToSave, existingPurchase)
 
-  const eventId = createEventId()
+if (savedPurchase.productType === "SUBSCRIPTION") {
+  await acknowledgeSubscriptionPurchaseIfNeeded({
+    packageName: savedPurchase.packageName,
+    productId: savedPurchase.productId,
+    purchaseToken: savedPurchase.purchaseToken,
+    acknowledgementState: savedPurchase.acknowledgementState
+  })
+}
+
+const eventId = createEventId()
 
   const entitlement = computeEntitlementFromPurchase({
     purchase: savedPurchase,
